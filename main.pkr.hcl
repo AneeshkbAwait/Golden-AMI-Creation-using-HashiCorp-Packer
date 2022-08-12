@@ -30,7 +30,7 @@ build {
   sources = ["source.amazon-ebs.app"]
 
   provisioner "shell" {
-    script          = "setup.sh"
+    script          = "appscript.sh"
     execute_command = "sudo  {{.Path}}"
   }
 
